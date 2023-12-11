@@ -16,3 +16,8 @@ Working directories:
             * license.txt: FreeSurfer license
     - /work/: working directory for fMRI prep pipeline
 - within_between_similarity.py: initial analysis script for functional connectivity maps
+
+
+Softwares to install: \
+[Nilearn](https://nilearn.github.io/stable/index.html) \
+[dcm2bids](https://unfmontreal.github.io/Dcm2Bids/3.1.1/)
