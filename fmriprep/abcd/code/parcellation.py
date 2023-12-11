@@ -43,7 +43,7 @@ correlation_measure = ConnectivityMeasure(
     standardize="zscore_sample",
 )
 
-derivatives_dir = '/scratch/users/yiranf/dry_run/derivatives/'
+derivatives_dir = '/scratch/users/yiranf/fmriprep/abcd/derivatives/'
 fc_dir = '/scratch/users/yiranf/abcd_fc/'
 
 def extract_brain_signal(sub, ses):

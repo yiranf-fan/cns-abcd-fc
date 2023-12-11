@@ -5,7 +5,7 @@ if [ "$#" -eq 0 ]; then
     exit 1
 fi
 
-derivatives_dir="$SCRATCH/dry_run/derivatives"
+derivatives_dir="$SCRATCH/fmriprep/abcd/derivatives"
 output_dir="$SCRATCH/abcd_fc"
 
 # Use an array to store the full paths

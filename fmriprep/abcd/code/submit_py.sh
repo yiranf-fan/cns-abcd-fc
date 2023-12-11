@@ -11,4 +11,4 @@
 
 ml load python/3.9.0
 source /scratch/users/yiranf/nilearn/bin/activate
-python3 /scratch/users/yiranf/dry_run/code/parcellation.py
+python3 /scratch/users/yiranf/fmriprep/abcd/code/parcellation.py
