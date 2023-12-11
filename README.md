@@ -21,4 +21,4 @@ Working directories:
 Softwares to install: \
 [fMRI Prep](https://fmriprep.org/en/23.1.3/index.html)\
 [dcm2bids](https://unfmontreal.github.io/Dcm2Bids/3.1.1/)\
-[Nilearn](https://nilearn.github.io/stable/index.html) \
+[Nilearn](https://nilearn.github.io/stable/index.html)
