@@ -1,13 +1,16 @@
 #!/bin/bash
 
+# Copy the data package to the source directory
+cp -r /scratch/groups/kpohl/data/abcd_package_1224334 /scratch/groups/kpohl/fmriprep/dicom2bids-tools/abcd/sourcedata
+
 # Define the source directory where raw abcd packages are located
-source_dir="$SCRATCH/dicom2bids-tools/abcd/sourcedata/abcd_package_1222190"
+source_dir="/scratch/groups/kpohl/data/abcd_package_1224334"
 
 # Define the final destination directory where processed bids format are located for fmriprep
-destination_dir="$SCRATCH/fmriprep/abcd"
+destination_dir="/scratch/groups/kpohl/fmriprep/abcd"
 
 # Define the intermediate directory where dcm2bids convert anatomical dicom files to nifti
-intermediate_dir="$SCRATCH/dicom2bids-tools/abcd"
+intermediate_dir="/scratch/groups/kpohl/fmriprep/dicom2bids-tools/abcd"
 
 # Move functional tgz files to the destination directory
 mv "${source_dir}/fmriresults01/abcd-mproc-release5"/*.tgz "${destination_dir}"
@@ -46,7 +49,7 @@ cd "${intermediate_dir}"
 
 # Load dcm2bids tool
 ml load python/3.9.0
-source $SCRATCH/dicom2bids-tools/dcm2bids/bin/activate
+source /scratch/groups/kpohl/fmriprep/dicom2bids-tools/dcm2bids/bin/activate
 
 # Convert
 config_file="${intermediate_dir}/code/abcd_config.json"
